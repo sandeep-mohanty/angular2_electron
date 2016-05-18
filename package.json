@@ -1,0 +1,45 @@
+{
+  "name": "angular2_electron",
+  "version": "1.0.0",
+  "description": "A sample desktop application built using Electron and Angular2 technology",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "compile": "gulp",
+    "package": "electron-packager . --platform=win32 --arch=x64",
+	"archive": "asar pack angular2_electron-win32-x64/resources/app angular2_electron-win32-x64/resources/app.asar"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandeep-mohanty/angular2_electron.git"
+  },
+  "keywords": [
+    "electron",
+    "desktop",
+    "app"
+  ],
+  "author": "Sandeep Mohanty",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sandeep-mohanty/angular2_electron/issues"
+  },
+  "homepage": "https://github.com/sandeep-mohanty/angular2_electron#readme",
+  "dependencies": {
+    "angular2": "^2.0.0-beta.17",
+    "es6-shim": "^0.35.1",
+    "reflect-metadata": "^0.1.2",
+    "rxjs": "^5.0.0-beta.6",
+    "systemjs": "^0.19.27",
+    "zone.js": "^0.6.12",
+    "npm-polymer-elements": "0.0.1"
+  },
+  "devDependencies": {
+    "asar": "^0.11.0",
+    "clear": "0.0.1",
+    "del": "^2.2.0",
+    "electron-packager": "^7.0.1",
+    "electron-prebuilt": "^1.1.0",
+    "gulp": "^3.9.1",
+    "ntypescript": "^1.201605172209.1"
+  }
+}
